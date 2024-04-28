@@ -1,0 +1,317 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color:black;
+    width: 360px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+.main_content{
+    background-color:#121212 ;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem;
+}
+.music_player{
+    background-color: #000;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 5rem;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 112px;
+    padding-left:0.5rem ;
+}
+.nav-option{
+    line-height: 2.25rem;
+    opacity: 0.7;
+    padding: 0.1rem 0.75rem;
+}
+.nav-option a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    margin-left:1rem ; 
+    font-weight: 700; 
+}
+.lib-option a{
+    text-decoration: none;
+    color: white;
+}
+.nav-option i{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    font-size: 1.25rem;
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.lib-option img{
+    height: 1.1rem;
+    width: 1.1rem;
+    cursor: pointer;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin:0.5rem 0rem 1.25rem 0rem;
+    padding: 0.75rem 1rem;
+}
+.box-p1{
+    font-size: 0.9rem;
+    font-weight: 700;
+    opacity: 1;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 1;
+    margin-top: 0.7rem;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.9rem;
+    height: 1.75rem;
+    width: fit-content;
+}
+.nav-top{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+.top-badges .badge{
+    margin-top: 0;
+}
+.top-icons {
+    margin-left: 0.7rem;
+}
+.top-badges{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-badges .badge,.hllo{
+    margin-right: 1rem;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 170px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.cards-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.main_content h2{
+    margin-top: 1.45rem;
+}
+.music_player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-icon {
+    height: 0.8rem;
+    margin-right: 1.7rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.second .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-icon:hover{
+    opacity: 1;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.progress-bar{
+    width: 55%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 100px;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.second span{
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+.music_player .first{
+    /* display: flex; */
+    padding: 0.4rem;
+    /* justify-content: space-between; */
+    /* display: flex;
+    flex-wrap: nowrap; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.music_player .pic{
+    height: 2.65rem;
+    width: 2.65rem;
+    /* margin-right: 3rem; */
+    margin-right: 1rem;
+    /* display: inline; */
+}
+.music_player .first .fir{
+    font-size: 0.85rem;
+    font-weight: 500;
+    /* line-height: 0.5rem; */
+    margin-bottom: 0.2rem;
+}
+.music_player .first .sec{
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+.first{
+    width: 25%;
+}
+.third{
+    width: 25%;
+}
+.third{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-album{
+    display: flex;
+    flex-direction: column;
+}
+.second{
+    width: 50%;
+}
+.third .images img{
+    height: 1.5rem;
+    width: 1.5rem;
+    /* margin-right: 0.15rem; */
+    cursor: pointer;
+}
+@media(max-width:1061px){
+    .music_player .first,.third{
+        display: none;
+    }
+} 
+.ran::-webkit-slider-runnable-track{
+    background-color:white;
+    height: 0.15rem;
+    border-radius: 100px;
+    margin-left: 1.2rem;
+}
+.ran::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+
+
